@@ -1,0 +1,1 @@
+console.log("hello..file is linked from html to js")
