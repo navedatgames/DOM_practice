@@ -1,1 +1,1 @@
-console.log("hello..file is linked from html to js")
+console.log("hello..file is linked from html to js good luck")

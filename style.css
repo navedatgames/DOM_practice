@@ -1,7 +1,22 @@
 h2 {
-    background-color: green;
+    background-color: yellow;
+    color: green;
 }
 
-ul {
+h3 {
     background-color: yellow;
+    color: green
+}
+
+h1 {
+    /* text-align: center; */
+    margin-left: 4rem
+}
+
+button {
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    width: 10rem;
+    border-radius: 25%
 }

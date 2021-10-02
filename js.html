@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-    <title>Document</title>
+    <title>test</title>
 </head>
 
 <body>
-    <script src="script.js">
+    <h1>naved</h1>
+    <h2>hello</h2>
+    <script>
+        let h1tag = document.querySelector("h1");
+        h1tag.style.backgroundColor = "red";
+        h1tag.style.color = "yellow";
+        let h2tag = document.querySelector("h2");
+        h2tag.style.color = "blue";
+        h2tag.style.backgroundColor = "yellow";
+
+
+
+        h1tag.addEventListener("click", function() {
+            alert("hi i am naved")
+        })
+        console.log(h1tag.innerText)
     </script>
 </body>
 

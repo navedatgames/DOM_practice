@@ -1,0 +1,46 @@
+#red {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+#green {
+    background-color: green;
+    position: fixed;
+    right: 0;
+    top: 0
+}
+
+#blue {
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0
+}
+
+#yellow {
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#pink {
+    background-color: pink;
+    position: fixed;
+    top: 18rem;
+    left: 35rem
+}
+
+div {
+    height: 10rem;
+    width: 10rem
+}
+
+
+/* .parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
