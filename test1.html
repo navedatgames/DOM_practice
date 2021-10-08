@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+
+
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor odio in dolorum reprehenderit labore rerum enim omnis laboriosam, nulla est officiis, commodi vel nemo facilis! Quasi commodi repellendus libero?
+
+        </p >
+        <p  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eligendi cum iure beatae? Accusamus doloribus ad quos aspernatur, laboriosam harum molestias incidunt ea sunt eius delectus sit, magni quasi minus.
+     
+        </p>
+     
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat suscipit veniam sapiente quae ipsa! Eos, animi hic nihil temporibus consequatur, dolores distinctio voluptatibus repellendus sint perferendis ipsa veritatis dolorum!
+     
+        </p>
+
+
+
+   <script>
+       let ptag = document.querySelectorAll("p");
+        for(let i =0;i<ptag.length;i++){
+            ptag[i].addEventListener("click",function(){
+                ptag[i].style.backgroundColor = "green";
+            })
+            ptag[i].addEventListener("dblclick",function(){
+                ptag[i].style.backgroundColor = "red";
+            })
+
+            ptag[i].addEventListener("click", function (evt) {
+            if (evt.detail == 3) {
+                ptag[i].style.backgroundColor = "blue";
+            }
+            })
+    
+        }
+   </script>
+</body>
+</html>

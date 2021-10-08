@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <h1>BOOK MY SHOW</h1>
+<div class="dropdown">
+    <select name="movie" id="movie">
+        <option value="none">None</option>
+        <option value="action">Action</option>
+        <option value="romance">Romance</option>
+        <option value="comedy">Comedy</option>
+      </select>
+</div>
+     <div class = "mainbox">
+          <div class = "box">
+              <h3 class = "heading">Example-1</h3>
+              <p class = "price" data-category = "action">Rs.100</p>
+          </div>
+
+          <div class = "box">
+                <h3 class = "heading">Example-2</h3>
+                <p class = "price" data-category = "action">Rs.200</p>
+          </div>
+
+          <div class = "box">
+                <h3 class = "heading">Example-3</h3>
+                <p class = "price" data-category = "romance">Rs.150</p>
+          </div>
+
+          <div class = "box">
+                <h3 class = "heading">Example-4</h3>
+                <p class = "price" data-category = "comedy">Rs.250</p>
+          </div>
+
+          <div class = "box">
+                <h3 class = "heading">Example-5</h3>
+                <p class = "price" data-category = "comedy">Rs.150</p>
+          </div>
+
+
+          <div class  = "box">
+                <h3 class = "heading">Example-6</h3>
+                <p class = "price" data-category = "romance">Rs.300</p>
+          </div>
+
+          <div class  = "box">
+                <h3 class = "heading">Example-7</h3>
+                <p class = "price" data-category = "action">Rs.200</p>
+            
+            </div>
+
+            <div class  = "box">
+                <h3 class = "heading">Example-8</h3>
+                <p class = "price" data-category = "romance">Rs.100</p>
+            
+            </div>
+
+            <div class  = "box">
+                <h3 class = "heading">Example-9</h3>
+                <p class = "price" data-category = "comedy">Rs.100</p>
+            
+            </div>
+
+            <div class  = "box">
+                <h3 class = "heading">Example-10</h3>
+                <p class = "price" data-category = "action">Rs.100</p>
+            
+            </div>
+
+          
+          
+      </div>
+
+      <script>
+
+          let selectag = document.querySelector("select");
+          let divtag = document.querySelectorAll(".box")
+
+          selectag.addEventListener("change",function(e){
+
+              for(let i =0;i<divtag.length;i++){
+                  let currentTicket = divtag[i];
+                  let ptag = currentTicket.querySelector("p");
+                  let category = ptag.getAttribute("data-category")
+
+                  if(selectag.value != category && selectag.value!="none"){
+                      currentTicket.style.display = "none";
+                  }
+                  else{
+                    currentTicket.style.display = "block";
+                  }
+              }
+          })
+      </script>
+</body>
+</html>
