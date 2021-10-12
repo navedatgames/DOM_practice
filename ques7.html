@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height:15rem;
+            width: 15rem;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .child{
+           
+
+            height: 8rem;
+            width: 8rem;
+            background-color: yellow;
+        }
+        .lower{
+            height: 5rem;
+            width: 5rem;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class = "parent">
+        <div class = "child">
+           
+        </div>
+    </div>
+
+    <script>
+
+        let main = document.querySelector(".parent")
+        
+        main.addEventListener("click",function(){
+            alert("Red was clicked");
+        })
+    </script>
+
+</body>
+</html>

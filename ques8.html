@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class = "main">Remove All</button>
+
+    <ul class = "mainUl">
+        <li>Task 1 
+            <button >Delete</button>
+        </li>
+
+        <li>Task 2 
+            <button >Delete</button>
+        </li>
+
+        <li>Task 3 
+            <button>Delete</button>
+        </li>
+        
+        
+    </ul>
+
+    <script>
+
+        let mainButton = document.querySelector(".main")
+        let ultag = document.querySelector(".mainUl")
+        let b = document.querySelectorAll("button");
+        
+        mainButton.addEventListener("click",function(){
+            ultag.remove();
+        })
+
+        for(let i =0;i<b.length;i++){
+            b[i].addEventListener("click",function(e){
+                e.currentTarget.parentElement.remove();
+            })
+        }
+
+        
+
+    </script>
+</body>
+</html>

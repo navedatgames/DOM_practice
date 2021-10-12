@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "btncontain">
+        <button class = "double">double</button>
+    </div>
+
+    <script>
+
+        let btnholder = document.querySelector(".btncontain")
+
+        let but = document.querySelector(".double")
+
+        but.addEventListener("click",btnhandler)
+        function btnhandler(e){
+            let b1 = document.createElement("button")
+            let b2 = document.createElement("button")
+            b1.innerText = "double"
+            b2.innerText = "double";
+        
+
+        b1.addEventListener("click",btnhandler)
+        b2.addEventListener('click',btnhandler)
+
+        btnholder.append(b1);
+        btnholder.append(b2);
+
+        e.currentTarget.remove();
+        }
+    </script>
+</body>
+</html>

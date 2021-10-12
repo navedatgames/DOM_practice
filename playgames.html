@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 10rem;
+            width:10rem;
+            border-color: black;
+            border-style: solid;
+            margin: 30px;
+            background-color:lightpink;
+
+        }
+
+    </style>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+    <h1>
+        SELECT THREE BOXES AND WIN THE GAME!
+    </h1>
+    
+    <div class = "boxes">
+        <div class = "box" id = "box1" ></div>
+        <div class = "box" id = "box2" ></div>
+        <div class = "box" id = "box3"></div>
+        <div class = "box" id = "box4" ></div>
+        <div class = "box" id = "box5"></div>
+        <div class = "box" id = "box6"></div>
+        <div class = "box" id = "box7"></div>
+        <div class = "box" id = "box8"></div>
+        <div class = "box" id = "box9"></div>
+    </div>
+
+    <script>
+        let allboxes = document.querySelectorAll(".box")
+
+        
+           for(let i =0;i<allboxes.length;i++){
+               let currentBox = allboxes[i];
+               currentBox.addEventListener("click",function(){
+
+                   
+               })
+           }
+    
+
+        
+
+        
+    </script>
+</body>
+</html>
